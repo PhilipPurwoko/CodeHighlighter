@@ -28,17 +28,5 @@ export const store = new Vuex.Store({
 		getInsta:state=>{
 			return state.instagram;
 		}
-	},
-	mutations:{
-		applyDiskon:state=>{
-			state.jasa.filter(item=>item.diskon).forEach(item=>{item.harga = 80 / 100 * item.harga});
-		}
-	},
-	actions:{
-		applyDiskon:context=>{
-			setTimeout(function(){
-				context.commit('applyDiskon')
-			},2000);
-		}
 	}
 })
