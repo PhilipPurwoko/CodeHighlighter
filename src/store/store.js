@@ -10,7 +10,7 @@ export const store = new Vuex.Store({
 		copyright:{
 			license : 'MIT',
 			author : 'Philip Purwoko',
-			repository : 'https://github.com/PhilipPurwoko'
+			repository : 'https://github.com/PhilipPurwoko/CodeHighlighter'
 		},
 		instagram:{
 			username:'philippurwoko',
