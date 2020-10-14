@@ -19,9 +19,6 @@
     };
 </script>
 
-<style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-</style>
 <style scoped>
     footer{
         text-align: center;

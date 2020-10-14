@@ -12,11 +12,8 @@ export const store = new Vuex.Store({
 			author : 'Philip Purwoko',
 			repository : 'https://github.com/PhilipPurwoko/CodeHighlighter'
 		},
-		instagram:{
-			username:'philippurwoko',
-			link:`https://instagram.com/philippurwoko`,
-			target:'_blank'
-		}
+		api: "https://highlight-code-api.jefrydco.vercel.app/api",
+		langs: ["javascript", "python"]
 	},
 	getters:{
 		getTitle:state=>{
@@ -25,8 +22,43 @@ export const store = new Vuex.Store({
 		getCopyright:state=>{
 			return state.copyright;
 		},
-		getInsta:state=>{
-			return state.instagram;
+		getAPI:state=>{
+			return state.api;
+		},
+		getLangs:state=>{
+			return state.langs;
 		}
 	}
+
+	// mutations:{
+	// 	changeLang:(state,newLang)=>{
+	// 		state.lang = newLang;
+	// 		console.log('Change lang');
+	// 	},
+	// 	changeCode:(state,raw)=>{
+	// 		state.code = raw;
+	// 		console.log('Change code');
+	// 	},
+	// 	changeFormated:(state,formated)=>{
+	// 		state.formated = formated;
+	// 		console.log('Change formated');
+	// 	}
+	// },
+	// actions:{
+	// 	changeLang:context=>{
+	// 		setTimeout(function(){
+	// 			context.commit('changeLang');
+	// 		},200);
+	// 	},
+	// 	changeCode:(context,raw)=>{
+	// 		setTimeout(function(){
+	// 			context.commit('changeCode',raw);
+	// 		},200);
+	// 	},
+	// 	changeFormated:(context,formated)=>{
+	// 		setTimeout(function(){
+	// 			context.commit('changeFormated',formated);
+	// 		},200);
+	// 	}
+	// }
 })

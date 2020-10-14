@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Highlighter</title>
-    <style type="text/css">
-    	body{
-    		background-color: #f2dea7
-    	}
-    	::-moz-selection {
-    		color: white;
-    		background: darkorange;
-		}
-
-		::selection {
-			color: white;
-			background: darkorange;
-		}
-    </style>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Code Highlighter</title>
+        <style type="text/css">
+            @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+            @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+            
+            .shiki__meta {
+                display: none;
+            }
+            ::-webkit-scrollbar-corner {
+                background: none;
+            }
+            .monospace {
+                font-family: "Share Tech Mono", monospace;
+            }
+            body {
+                background-color: #f2dea7;
+            }
+            ::-moz-selection {
+                color: white;
+                background: darkorange;
+            }
+            ::selection {
+                color: white;
+                background: darkorange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="/dist/build.js"></script>
+    </body>
 </html>
