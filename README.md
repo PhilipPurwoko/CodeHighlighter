@@ -1,24 +1,15 @@
-# code-highlighter
+# :sparkles: Code Highlighter
+Simple, fast, and responsive syntax highlighter app. Developed with vue. Deployed on Vercel http://code-highlighter.vercel.app/
 
-## Project setup
-```
-npm install
-```
+## :memo: Features:
+* Instant code highlighter
+* Support 100+ programming languages
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# :computer: Project setup
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| Step by Step                             | Command       |
+|------------------------------------------|---------------|
+| Install packages                         | `npm install`   |
+| Compiles and hot-reloads for development | `npm run serve` |
+| Compiles and minifies for production     | `npm run build` |
+| Lints and fixes files                    | `npm run lint`  |
