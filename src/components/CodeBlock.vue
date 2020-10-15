@@ -16,12 +16,13 @@
 
 <script>
     import axios from "axios";
-    import { mapGetters } from 'vuex';
+    import { mapGetters  } from 'vuex';
 
     export default {
         data: function() {
             return {
                 lang: "",
+                languages:[],
                 code: "",
                 formated: ""
             };
@@ -29,10 +30,18 @@
         computed:{
             ...mapGetters([
                 'getAPI',
-                'getLangs',
-                'getFormated',
-                'getCode'
-            ])
+                'getLangAPI'
+            ]),
+            getLangs(){
+                return this.languages
+            }
+        },
+        created(){
+            axios.get(this.getLangAPI).then(res=>{
+                res.data.data.languages.forEach(lang=>{
+                    this.languages.push(lang);
+                })
+            });
         },
         methods: {
             highlight() {

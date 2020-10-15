@@ -10,7 +10,7 @@ export const store = new Vuex.Store({
 			repository : 'https://github.com/PhilipPurwoko/CodeHighlighter'
 		},
 		api: "https://highlight-code-api.jefrydco.vercel.app/api",
-		langs: ["javascript", "python"]
+		langAPI: "https://highlight-code-api.jefrydco.vercel.app/api/options",
 	},
 	getters:{
 		getTitle:state=>{
@@ -22,8 +22,8 @@ export const store = new Vuex.Store({
 		getAPI:state=>{
 			return state.api;
 		},
-		getLangs:state=>{
-			return state.langs;
+		getLangAPI:state=>{
+			return state.langAPI;
 		}
     }
 });
