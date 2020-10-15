@@ -3,5 +3,8 @@ import { createStore } from 'vuex'
 import { store } from './store/store'
 import App from './App.vue'
 
-createApp(App).mount('#app');
-createStore({store:store});
+// console.log(store);
+
+const app = createApp(App).mount('#app');
+const vuestore = createStore(store);
+app.use(vuestore);
