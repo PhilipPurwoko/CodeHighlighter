@@ -5,9 +5,7 @@
 </template>
 
 <script>
-    
     import { mapGetters } from 'vuex';
-
     export default {
         computed:{
             ...mapGetters([
@@ -18,7 +16,6 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     header{
         text-align: center;
         font-family: 'Righteous', cursive;

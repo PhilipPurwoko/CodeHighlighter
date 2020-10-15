@@ -1,7 +1,4 @@
-import Vue from 'vue';
 import Vuex from 'vuex';
-
-Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	strict:true,
@@ -12,11 +9,8 @@ export const store = new Vuex.Store({
 			author : 'Philip Purwoko',
 			repository : 'https://github.com/PhilipPurwoko/CodeHighlighter'
 		},
-		instagram:{
-			username:'philippurwoko',
-			link:`https://instagram.com/philippurwoko`,
-			target:'_blank'
-		}
+		api: "https://highlight-code-api.jefrydco.vercel.app/api",
+		langAPI: "https://highlight-code-api.jefrydco.vercel.app/api/options",
 	},
 	getters:{
 		getTitle:state=>{
@@ -25,8 +19,11 @@ export const store = new Vuex.Store({
 		getCopyright:state=>{
 			return state.copyright;
 		},
-		getInsta:state=>{
-			return state.instagram;
+		getAPI:state=>{
+			return state.api;
+		},
+		getLangAPI:state=>{
+			return state.langAPI;
 		}
-	}
-})
+    }
+});

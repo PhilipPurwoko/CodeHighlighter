@@ -1,13 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue'
 import { store } from './store/store'
-import VueResource from 'vue-resource'
+import App from './App.vue'
 
-export const bus = new Vue();
-Vue.use(VueResource);
+// Create vue instance
+const app = createApp(App);
 
-new Vue({
-	store:store,
-	el: '#app',
-	render: h => h(App)
-})
+// Install the plugin first
+app.use(store);
+
+// Mount your app
+app.mount('#app');
