@@ -5,8 +5,8 @@ import App from './App.vue'
 // Create vue instance
 const app = createApp(App);
 
-// Install the plugin first
+// Install the vuex plugin first
 app.use(store);
 
-// Mount your app
+// Mount app
 app.mount('#app');
